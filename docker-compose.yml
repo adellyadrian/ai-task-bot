@@ -29,5 +29,8 @@ services:
       redis:
         condition: service_healthy
 
+    volumes:
+      - ./api:/app
+      
 volumes:
   pgdata:
